@@ -7,7 +7,10 @@
  */
 
 // Your code :
-
+function concatStr(arg1, arg2){
+    let concat = arg1 + arg2;
+    return concat;
+}
 //* Begin of tests
 const assert = require('assert')
 

@@ -8,7 +8,10 @@
  */
 
 // Your code :
-
+function getFirst(arg){
+    let first = arg[0];
+    return first;
+}
 //* Begin of tests
 const assert = require('assert')
 
