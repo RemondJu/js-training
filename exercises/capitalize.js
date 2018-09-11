@@ -7,7 +7,9 @@
  *
  */
 
-
+function capitalize(str){
+    
+}
 //* Begin of tests
 const assert = require('assert')
 

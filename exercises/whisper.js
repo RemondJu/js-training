@@ -7,9 +7,13 @@
  *
  */
 
-
+function whisper(str){
+    let lowstr = str.toLowerCase();
+    return lowstr;
+}
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(whisper('Julien'), 'julien');
+assert.strictEqual(whisper('JEANJEAN'), 'jeanjean');
 // End of tests */

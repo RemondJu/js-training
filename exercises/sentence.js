@@ -6,7 +6,20 @@
  *
  */
 
-
+function sentence(arr){
+    let result = "";
+    let long = arr.length - 1;
+    for (let i = 0; i < arr.length; i++){
+        if (i < long){
+            result += arr[i];
+            result += ' ';
+        }
+        else{
+            result += arr[i];
+        }
+    }
+    return result;
+}   
 //* Begin of tests
 const assert = require('assert')
 
