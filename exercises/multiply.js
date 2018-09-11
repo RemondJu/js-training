@@ -17,6 +17,9 @@ function multiply(nb1, nb2){
         }
         return result;
     }
+    else if(nb1 === 0){
+        return 0;
+    }
     else{
         for(let i = 0; i < -nb2; i++){
             result += nb1;
