@@ -8,7 +8,22 @@
  */
 
 // Your code :
-
+function sameSign(nb1, nb2){
+    let signe = true;
+    if ((nb1 > 0) && (nb2 > 0)){
+        return signe;
+    }
+    else if((nb1 < 0) && (nb2 < 0)){
+        return signe;
+    }
+    else if((nb1 === 0)&&(nb2 === 0)){
+        return signe;
+    }
+    else{
+        signe = false;
+        return signe;
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 
