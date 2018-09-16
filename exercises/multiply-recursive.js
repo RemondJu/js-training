@@ -30,6 +30,9 @@ function multiply(nb1, nb2){
         } 
         return -total; 
     }
+    else if (total !== 0){
+        return -total;
+    }
     else{
         return total;
     }
