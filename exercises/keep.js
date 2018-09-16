@@ -11,10 +11,23 @@
  * and only keep 2 characters from the third character
  *
  */
-
+function keepFirst (str){
+    let string = str.slice(0, 2);
+    return string;
+}
+function keepLast (str){
+    let string = str.slice(-2);
+    return string;
+}
+function keepFirstLast (str){
+    let string = str.slice(3, 5);
+    return string;
+}
 
 //* Begin of tests
-const assert = require('assert')
+const assert = require('assert');
 
-assert.fail('You must write your own tests')
+assert.strictEqual(keepFirst('zorro'), 'zo');
+assert.strictEqual(keepLast('zorro'), 'ro');
+assert.strictEqual(keepFirstLast('zorrozorro'), 'ro');
 // End of tests */
