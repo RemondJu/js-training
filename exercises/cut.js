@@ -10,24 +10,17 @@
  * https://github.com/nan-academy/refs/blob/master/js-training/methods.md#string---transform
  */
 function cutFirst(str){
-    for(let i = 0; i < 2; i++){
-        str[i] = '';
-    }
+    let string = str.slice(2);
+    return string;
 }
 function cutLast(str){
-    let long = str.length - 1;
-    for(let i = long; i > long - 2; i--){
-        str[i] = '';
-    }
+    let string = str.slice(0, -2);
+    return string;
 }
 function cutFirstLast(str){
-    let long = str.length - 1;
-    for(let i = long; i > long - 2; i--){
-        str[i] = '';
-    }
-    for(let i = 0; i < 2; i++){
-        str[i] = '';
-    }
+    let string = str.slice(2);
+    string = string.slice(0, -2);
+    return string;
 }
 
 //* Begin of tests
